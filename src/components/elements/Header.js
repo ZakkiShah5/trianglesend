@@ -1,8 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
-import { IoSunny } from "react-icons/io5";
-import { FaMoon, FaMagnifyingGlass } from "react-icons/fa6";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import circle  from '../../assets/circle.png'
 import '../../App.css'
 const Header = () => {
