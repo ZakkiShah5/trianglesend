@@ -1,0 +1,74 @@
+header .below-header {
+  border: 10px solid transparent;
+  border-image-source: url('assets/border.png');
+  border-image-slice: 50;
+  border-image-repeat: repeat;
+  border-image-width: 125px;
+}
+header .circle img {
+  position: absolute;
+  top: -30px;
+  left: -80px;
+  width: 120px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.85;
+}
+header .circle-2 img {
+  position: absolute;
+  top: -30px;
+  right: -80px;
+  width: 120px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+/* cards */
+
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}
