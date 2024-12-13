@@ -1,4 +1,3 @@
-import adventure from '../../../assets/adventure.avif'
 import ship from '../../../assets/ship.avif'
 
 const Overview = () => {
