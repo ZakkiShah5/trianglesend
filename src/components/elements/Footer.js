@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
+import '../../App.css'
+
 
 const Footer = () => {
   return (
     <footer className='bg-primary font-pirate text-secondary shadow-lg'>
+        <div className="upper-border"></div>
       <div className='p-5 max-w-screen-lg  transition ease-in-out my-0 mx-auto flex  justify-between'>
         <div>
           <Link to='/'>

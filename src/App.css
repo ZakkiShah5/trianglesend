@@ -5,6 +5,13 @@ header .below-header {
   border-image-repeat: repeat;
   border-image-width: 125px;
 }
+footer .upper-border{
+  border-top: 10px solid transparent;
+  border-image-source: url('assets/border.png');
+  border-image-slice: 50;
+  border-image-repeat: repeat;
+  border-image-width: 125px;
+}
 header .circle img {
   position: absolute;
   top: -30px;
