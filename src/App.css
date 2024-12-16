@@ -1,3 +1,10 @@
+body{
+  cursor: url('assets/cursor/cursor1.png'), auto;
+  background-color: #1a2526;
+}
+button:hover, a:hover{
+  cursor: url('assets/cursor/cursor2.png'), auto;
+}
 header .below-header {
   border: 10px solid transparent;
   border-image-source: url('assets/border.png');
@@ -20,6 +27,11 @@ header .circle img {
   border-radius: 50%;
   z-index: 1;
   opacity: 0.85;
+  animation: circle 13000ms linear infinite;
+}
+@keyframes circle{
+  from{ transform: rotate(0deg);}
+  to{ transform: rotate(-360deg);}
 }
 header .circle-2 img {
   position: absolute;
@@ -29,8 +41,12 @@ header .circle-2 img {
   border-radius: 50%;
   z-index: 1;
   opacity: 0.85;
+  animation: circle2 13000ms linear infinite;
 }
-
+@keyframes circle2{
+  from{ transform: rotate(0deg);}
+  to{ transform: rotate(360deg);}
+}
 /* cards */
 
 
