@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <div className='relative font-pirate'>
       <div className='absolute top-10 left-1/2 transform z-10 -translate-x-1/2 -translate-y-1/2'>
-        <img src={badge} className='w-96' alt='badge' />
+        <img src={badge} className='w-11/12 md:w-96' alt='badge' />
       </div>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -45,15 +45,15 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className='h-full'>
             <img
-              className='object-cover w-full h-[110vh]'
+              className='object-cover w-full h-[50vh] md:h-[110vh]'
               src={slide.image}
               alt='cover'
             />
-            <div className='absolute opacity-90 bottom-5 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary p-2'>
-              <h1 className='text-5xl text-primary font-bold bg-secondary border-2 border-black'>
+            <div className='absolute opacity-90 bottom-5 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary p-2 z-10'>
+              <h1 className='text-md md:text-5xl text-primary font-bold bg-secondary border-2 border-black'>
                 {slide.title}
               </h1>
-              <p>{slide.date}</p>
+              <p className='text-sm md:text-2xl'>{slide.date}</p>
             </div>
           </SwiperSlide>
         ))}

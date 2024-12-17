@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='bg-primary font-pirate text-secondary shadow-lg'>
         <div className="upper-border"></div>
-      <div className='p-5 max-w-screen-lg  transition ease-in-out my-0 mx-auto flex  justify-between'>
+      <div className='p-5 max-w-screen-lg  transition ease-in-out my-0 mx-auto flex flex-col md:flex-row justify-between'>
         <div>
           <Link to='/'>
             <h1 className='text-2xl'>
