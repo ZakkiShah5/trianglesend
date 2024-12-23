@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom'
-import { FaMagnifyingGlass } from 'react-icons/fa6'
 import { FaBars } from 'react-icons/fa'
 import { useState } from 'react'
 import circle from '../../assets/circle.png'
@@ -8,7 +7,7 @@ const Header = () => {
   const [mobMenu, setMobMenu] = useState(false)
 
   return (
-    <header className='md:relative overflow-hidden bg-primary font-pirate text-secondary shadow-lg'>
+    <header className='relative md:relative overflow-hidden bg-primary font-pirate text-secondary shadow-lg'>
       <div className='circle'>
         <img src={circle} alt='circle' />
       </div>
