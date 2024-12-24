@@ -2,7 +2,7 @@ import circle from '../../../assets/circle.png'
 
 const More = () => {
   return (
-    <section className='max-w-screen-xl mx-auto bg-primary text-white p-10'>
+    <section className='max-w-screen-xl mx-auto bg-primary text-white p-10 more'>
       <div className='mb-10'>
         <h1 className='text-center text-4xl font-pirate text-secondary'>
           Welcome to Triangles End
@@ -82,7 +82,7 @@ const More = () => {
           <ul className='flex flex-col gap-2'>
             <li>
               <span className='text-secondary font-pirate'>
-                Discover Events:{' '}
+                Discover Events:
               </span>
               Attend one of our thrilling Pirate Adventures or find the perfect
               experience to spark your imagination.
@@ -96,7 +96,7 @@ const More = () => {
             </li>
             <li>
               <span className='text-secondary font-pirate'>
-                Host Your Event:{' '}
+                Host Your Event:
               </span>
               From private celebrations to creative gatherings, Triangles End
               can be the perfect venue for your next unforgettable event.
@@ -110,7 +110,7 @@ const More = () => {
             </li>
             <li>
               <span className='text-secondary font-pirate'>
-                Join the Crew:{' '}
+                Join the Crew:
               </span>
               We’re always looking for passionate volunteers and organizations
               to collaborate with. Whether you want to help behind the scenes or

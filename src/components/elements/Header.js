@@ -1,31 +1,46 @@
 import { Link, NavLink } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { useState } from 'react'
-import circle from '../../assets/circle.png'
+
 import '../../App.css'
 const Header = () => {
   const [mobMenu, setMobMenu] = useState(false)
 
   return (
-    <header className='relative md:relative overflow-hidden bg-primary font-pirate text-secondary shadow-lg'>
-      <div className='circle'>
-        <img src={circle} alt='circle' />
-      </div>
+    <header className='md:relative bg-primary font-pirate text-secondary shadow-lg'>
       <div className='p-5 max-w-screen-lg  transition ease-in-out my-0 mx-auto flex items-center justify-between'>
         <Link to='/'>
           <h1 className='text-xl md:text-2xl'>
             Triangles<span className='text-white'>End</span>
           </h1>
         </Link>
-        <nav className='hidden md:flex  gap-4 font-medium'>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? 'text-white' : 'hover:text-white'
-            }
-            to='/'
-          >
-            World of TE
-          </NavLink>
+        <nav className='hidden md:flex gap-4 font-medium'>
+          <div className='relative group'>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'text-white' : 'hover:text-white'
+              }
+              to='/world-of-te'
+            >
+              World of TE
+            </NavLink>
+            <div className='absolute z-30 text-sm w-72 top-5 hidden group-hover:block bg-secondary text-primary mt-1 p-2 rounded shadow-lg'>
+              <div className='flex flex-col'>
+                <NavLink to='/pirate-adventure' className='py-1 px-3 border-b border-primary'>
+                  Pirate Adventure at TE
+                </NavLink>
+                <NavLink to='/custom-adventures' className='py-1 px-3 border-b border-primary'>
+                  Custom Adventures and Events
+                </NavLink>
+                <NavLink to='/places' className='py-1 px-3 border-b border-primary'>
+                  Places at TE
+                </NavLink>
+                <NavLink to='/stay' className='py-1 px-3'>
+                  Stay at TE
+                </NavLink>
+              </div>
+            </div>
+          </div>
           <NavLink
             to='/movies/popular'
             className={({ isActive }) =>
@@ -51,8 +66,6 @@ const Header = () => {
             Contact Us
           </NavLink>
         </nav>
-
-        
 
         <div className='md:hidden'>
           <FaBars
@@ -99,9 +112,6 @@ const Header = () => {
         )}
       </div>
       <div className='below-header'></div>
-      <div className='circle-2'>
-        <img src={circle} alt='circle' />
-      </div>
     </header>
   )
 }

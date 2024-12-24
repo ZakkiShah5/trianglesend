@@ -1,6 +1,6 @@
 import cover from '../../../assets/cover.avif'
-import ship from '../../../assets/slider/entrance.jpg'
-import guest from '../../../assets/slider/guests.jpg'
+// import ship from '../../../assets/slider/entrance.webp'
+// import guest from '../../../assets/slider/guests.jpg'
 import badge from '../../../assets/badge.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -18,19 +18,19 @@ const Hero = () => {
       date: 'September 14-15 Rain or Shine!'
     },
     {
-      image: ship,
+      // image: ship,
       title: 'Exciting Adventures Await!',
       date: 'Join the Crew Today!'
     },
     {
-      image: guest,
+      // image: guest,
       title: 'Exciting Adventures Await!',
       date: 'Join the Crew Today!'
     }
   ]
   return (
     <div className='relative font-pirate'>
-      <div className='absolute top-10 left-1/2 transform z-10 -translate-x-1/2 -translate-y-1/2'>
+      <div className='absolute top-10 left-1/2 transform z-20 -translate-x-1/2 -translate-y-1/2'>
         <img src={badge} className='w-11/12 md:w-96' alt='badge' />
       </div>
       <Swiper

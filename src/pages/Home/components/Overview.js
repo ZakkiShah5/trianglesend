@@ -4,11 +4,11 @@ const Overview = () => {
   return (
     <div className='overview flex flex-col md:flex-row justify-around max-w-screen-xl mx-auto bg-primary text-white'>
       <div className='flex-1 relative p-10'>
-        <img
+        {/* <img
           className='h-full md:h-[80vh] object-cover w-full'
           src={ship}
           alt='adv'
-        />
+        /> */}
       </div>
       <div className='flex-1 p-10 font-pirate'>
         <h1 className='text-4xl text-secondary mb-2'>Overview</h1>
