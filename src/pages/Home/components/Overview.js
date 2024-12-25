@@ -1,4 +1,4 @@
-import ship from '../../../assets/slider/ship.jpg'
+// import ship from '../../../assets/slider/ship.jpg'
 
 const Overview = () => {
   return (
