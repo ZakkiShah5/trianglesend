@@ -75,7 +75,7 @@ const Header = () => {
         </div>
 
         {mobMenu && (
-          <div className='absolute top-16 left-0 right-0 z-20 bg-primary px-8 py-4 flex flex-col gap-4 border-t'>
+          <div className='absolute top-16 left-0 right-0 z-40 bg-primary px-8 py-4 flex flex-col gap-4 border-t'>
             <NavLink
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'

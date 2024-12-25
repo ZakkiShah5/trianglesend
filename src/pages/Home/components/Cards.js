@@ -35,8 +35,8 @@ const Cards = () => {
 
   return (
     <div className='bg-primary flex flex-col md:flex-row font-pirate justify-between max-w-screen-xl mx-auto'>
-      {list.map(li => (
-        <div className='flip-card cursor-pointer'>
+      {list.map((li, index) => (
+        <div key={index} className='flip-card cursor-pointer'>
           <div className='flip-card-inner'>
             <div className='flip-card-front flex flex-col justify-center items-center'>
               <img className='w-16 h-16 object-contain' src={li.img} alt='g' />

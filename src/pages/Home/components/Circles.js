@@ -3,7 +3,7 @@ import '../Home.css'
 
 const Circles = () => {
   return (
-    <div className='max-w-full overflow-hidden'>
+    <div className='max-w-full overflow-hidden hidden md:block'>
       <div className='circle'>
         <img src={circle} alt='circle' />
       </div>
