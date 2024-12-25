@@ -21,7 +21,9 @@
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
+.flip-card:hover{
+  cursor: url('../../assets/cursor/cursor2.png'), auto;
+}
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
