@@ -9,8 +9,10 @@ import '../Home.css'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { useMediaQuery } from 'react-responsive';
 
 const Hero = () => {
+  const isLargerScreen = useMediaQuery({ minWidth: 768 });
   const slides = [
     {
       image: cover,
@@ -30,13 +32,13 @@ const Hero = () => {
   ]
   return (
     <div className='relative font-pirate'>
-      <div className='absolute top-10 left-1/2 transform z-20 -translate-x-1/2 -translate-y-1/2'>
+      <div className='absolute top-2 md:top-10 left-1/2 transform z-20 -translate-x-1/2 -translate-y-1/2'>
         <img src={badge} className='w-11/12 md:w-96' alt='badge' />
       </div>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
-        navigation
+        navigation={isLargerScreen}
         pagination={{ clickable: true }}
         autoplay={{ delay: 6000 }}
         loop={true}
@@ -49,7 +51,7 @@ const Hero = () => {
               src={slide.image}
               alt='cover'
             />
-            <div className='absolute opacity-90 bottom-5 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary p-2 z-10'>
+            <div className='absolute w-72 md:w-6/12 opacity-90 bottom-5 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-secondary p-2 z-10'>
               <h1 className='text-md md:text-5xl text-primary font-bold bg-secondary border-2 border-black'>
                 {slide.title}
               </h1>

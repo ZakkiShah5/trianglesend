@@ -54,7 +54,7 @@
 
 .hero-swiper .swiper-button-next,.hero-swiper .swiper-button-prev {
   color: #e7cc93;
-  font-size: 12px;
+  font-size: 10px;
   cursor: url('../../assets/cursor/cursor2.png'), auto;
 }
 .hero-swiper .swiper-pagination-bullet .swiper-pagination-bullet-active{

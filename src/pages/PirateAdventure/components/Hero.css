@@ -1,0 +1,14 @@
+.adv-page{
+    background-image: url('../../../assets/magic.webp');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.adv-glass{
+    border: 10px solid transparent;
+    border-image-source: url('../../../assets/border.png');
+    border-image-slice: 110;
+    border-image-repeat: repeat;
+    border-image-width: 10px;
+}
