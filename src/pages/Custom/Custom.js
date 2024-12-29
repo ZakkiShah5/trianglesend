@@ -8,7 +8,7 @@ import circle from '../../assets/circle.png'
 const Custom = () => {
   return (
     <section className='max-w-screen-xl mx-auto p-5 text-white'>
-      <div className='md:h-[60vh] my-10 md:relative'>
+      <div className='md:h-[50vh] my-4 md:relative'>
         <h1 className='text-secondary text-2xl font-pirate text-center'>
           Host Your Event at Triangles End
         </h1>

@@ -2,6 +2,7 @@ body{
   cursor: url('assets/cursor/cursor1.png'), auto;
   background-color: #1a2526;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 button:hover, a:hover{
   cursor: url('assets/cursor/cursor2.png'), auto;

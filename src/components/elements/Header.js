@@ -62,7 +62,7 @@ const Header = () => {
             </div>
           </div>
           <NavLink
-            to='/movies/popular'
+            to='/spirit-forge'
             className={({ isActive }) =>
               isActive ? 'text-white' : 'hover:text-white'
             }

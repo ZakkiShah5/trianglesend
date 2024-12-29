@@ -1,3 +1,5 @@
 export {default as Home} from './Home/Home'
+export {default as Places} from './Places/Places'
 export {default as Custom} from './Custom/Custom'
 export {default as PirateAdventure} from './PirateAdventure/PirateAdventure'
+export {default as Spirit} from './Spirit/Spirit'
