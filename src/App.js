@@ -1,8 +1,7 @@
 import { Header, Footer, PirateLoader } from './components';
-import { Custom, Spirit, Home, PirateAdventure, Places, Coming } from './pages';
+import { Custom, Spirit, Home, PirateAdventure, Places, Coming, Volunteer, Contact } from './pages';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Volunteer from './pages/Volunteer/Volunteer';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,6 +24,8 @@ const App = () => {
       '/custom-adventures': 'Custom Adventures',
       '/places': 'Explore Places',
       '/spirit-forge': 'Spirit Forge',
+      '/contact': 'Contact us',
+      '/volunteer': 'Volunteer'
     };
     document.title = routeToTitle[location.pathname] || 'Pirate Website';
   }, [location]);
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/spirit-forge" element={<Spirit />} />
         <Route path="/stay" element={<Coming/>}/>
         <Route path="/volunteer" element={<Volunteer/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer />
     </>

@@ -78,7 +78,7 @@ const Header = () => {
             Volunteer at TE
           </NavLink>
           <NavLink
-            to='/movies/upcoming'
+            to='/contact'
             className={({ isActive }) =>
               isActive ? 'text-white' : 'hover:text-white'
             }

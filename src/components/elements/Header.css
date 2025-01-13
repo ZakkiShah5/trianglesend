@@ -1,7 +1,7 @@
 .pirate-wheel {  
     position: relative;  
-    width: 200px;  
-    height: 200px;  
+    width: 100px;  
+    height: 100px;  
     animation: spin 1s linear infinite; /* Rotates infinitely */  
   }  
   .pirate-wheel2{
@@ -23,8 +23,8 @@
   }  
   @media (max-width: 490px){
     .pirate-wheel{
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
         margin-bottom: 40px;
     }
   }

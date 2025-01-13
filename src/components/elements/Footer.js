@@ -33,8 +33,8 @@ const Footer = () => {
           <div className='flex flex-col text-white'>
             <div className='flex items-center gap-3'>
               <FaEnvelope className='text-secondary' />
-              <a href='mailto:appliedalchemy@live.com'>
-                appliedalchemy@live.com
+              <a href='mailto:info@TrianglesEnd.com'>
+              info@TrianglesEnd.com
               </a>
             </div>
             <div className='flex items-center gap-3'>

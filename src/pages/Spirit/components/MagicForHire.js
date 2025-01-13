@@ -5,21 +5,18 @@ const MagicForHire = () => {
   return (
     <div className='font-sans'>
       {/* Hero Section */}
-      <section className='bg-primary unique-bg text-white py-20'>
-        <div className='container mx-auto text-center'>
-          <h1 className='text-4xl mb-4 font-pirate text-primary'>
-            Magic for Hire
-          </h1>
-          <p className='text-xl mb-6 font-pirate'>
-            Bring Your Stories to Life with Spirit Forge
-          </p>
-          <button className='bg-secondary text-primary py-2 px-6 font-semibold rounded shadow-md hover:from-yellow-300 font-pirate hover:to-secondary hover:scale-105 transform transition-all duration-300 ease-in-out'>
-            <a href='#about' rel='noreferrer'>
-              Learn More
-            </a>
-          </button>
-        </div>
-      </section>
+      <section className='adv-page relative'>
+      <div className='p-2 w-80 md:w-9/12 md:max-w-screen-xl mx-auto bg-black/30 backdrop-blur-md absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 adv-glass'>
+        <h1 className='text-center font-bold text-secondary font-pirate text-lg md:text-2xl '>
+        Magic for Hire
+        </h1>
+        <p className='text-center text-white text-xs md:text-lg font-pirate'>
+        Bring Your Stories to Life with Spirit Forge
+        </p>
+       
+      </div>
+    </section>
+      
 
       {/* Introduction Section */}
       <section id='about' className='py-20 bg-gray-100 max-w-screen-xl'>
