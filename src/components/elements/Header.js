@@ -5,14 +5,14 @@ import { useState } from 'react'
 import '../../App.css'
 
 const Header = () => {
-  const [mobMenu, setMobMenu] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [mobMenu, setMobMenu] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen)
   }
 
-  const closeMenu = ()=>{
+  const closeMenu = () => {
     setMobMenu(false)
     setIsOpen(false)
   }
@@ -27,14 +27,14 @@ const Header = () => {
         <nav className='hidden md:flex gap-4 font-medium'>
           <div className='relative group'>
             <Link
+              to='/pirate-adventure'
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
-              
             >
               World of TE
             </Link>
-            
+
             <div className='absolute z-30 text-sm w-72 top-5 hidden group-hover:block bg-secondary text-primary mt-1 p-2 rounded shadow-lg'>
               <div className='flex flex-col'>
                 <NavLink
@@ -104,7 +104,7 @@ const Header = () => {
               >
                 World of TE
               </button>
-              
+
               {/* Dropdown Menu */}
               {isOpen && (
                 <div className=' text-sm  text-secondary  mt-1 p-2 rounded'>

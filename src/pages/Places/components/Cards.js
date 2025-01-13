@@ -57,8 +57,8 @@ const Cards = () => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className='text-center w-80 mt-56 rounded-xl shadow-xl bg-primary bg-opacity-30 backdrop-blur-sm'>
-              <h1 className='text-secondary p-1 font-pirate font-bold'>
+            <div className='text-center w-80 mt-36 rounded-xl shadow-xl hover:bg-primary transition-all hover:bg-opacity-30 hover:backdrop-blur-sm'>
+              <h1 className='text-secondary text-lg p-1 font-pirate font-bold'>
                 {slide.title}
               </h1>
               <p className='text-sm font-medium'>{slide.description}</p>

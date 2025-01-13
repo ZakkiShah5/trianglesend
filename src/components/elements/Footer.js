@@ -17,7 +17,7 @@ const Footer = () => {
           <p className='text-white'>
             Second star to the right and straight on till morning
           </p>
-          <p className='text-xs mt-10'>2024 © Trianglesend – All Rights Reserved</p>
+          <p className='text-xs mt-10'> ©  {new Date().getFullYear()}  Trianglesend – All Rights Reserved</p>
         </div>
         <div>
           <h1 className='text-xl'>Links</h1>

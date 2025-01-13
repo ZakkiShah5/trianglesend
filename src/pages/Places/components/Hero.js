@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section className='max-w-screen-xl mx-auto bg-secondary text-white p-10 more'>
       <div className='text-center'>
-        <h1 className='text-center text-4xl font-pirate text-primary'>
+        <h1 className='text-center text-3xl md:text-4xl font-pirate text-primary'>
           Welcome to the Camp at Triangles End
         </h1>
         <p className='text-center font-medium text-primary font-pirate'>
