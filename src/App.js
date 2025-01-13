@@ -2,6 +2,7 @@ import { Header, Footer, PirateLoader } from './components';
 import { Custom, Spirit, Home, PirateAdventure, Places, Coming } from './pages';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Volunteer from './pages/Volunteer/Volunteer';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/places" element={<Places />} />
         <Route path="/spirit-forge" element={<Spirit />} />
         <Route path="/stay" element={<Coming/>}/>
+        <Route path="/volunteer" element={<Volunteer/>}/>
       </Routes>
       <Footer />
     </>

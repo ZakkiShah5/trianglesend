@@ -11,6 +11,7 @@ body{
 button:hover, a:hover{
   cursor: url('assets/cursor/cursor2.png'), auto;
 }
+
 header .below-header {
   border: 10px solid transparent;
   border-image-source: url('assets/border.png');
@@ -25,6 +26,7 @@ footer .upper-border{
   border-image-repeat: repeat;
   border-image-width: 125px;
 }
+
 
 
 /* cards */

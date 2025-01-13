@@ -1,0 +1,6 @@
+.unique-bg{
+    background-image: url('../../assets/map.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }

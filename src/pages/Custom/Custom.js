@@ -1,4 +1,3 @@
-import './Custom.css'
 import crew from '../../assets/slider/cannon.jpg'
 import pirate from '../../assets/slider/pirate.jpg'
 import hunt from '../../assets/slider/hunt.jpg'

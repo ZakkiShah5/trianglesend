@@ -1,0 +1,11 @@
+.bg-media{
+    background-image: url('../../assets/media-background-image.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+.man-bg{
+    background-image: url('../../assets/slider/pirate.jpg');
+    background-position: center;
+    background-size: cover;
+}

@@ -70,7 +70,7 @@ const Header = () => {
             Magic for Hire
           </NavLink>
           <NavLink
-            to='/movies/top'
+            to='/volunteer'
             className={({ isActive }) =>
               isActive ? 'text-white' : 'hover:text-white'
             }

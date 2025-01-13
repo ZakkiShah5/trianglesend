@@ -5,9 +5,9 @@ const MagicForHire = () => {
   return (
     <div className='font-sans'>
       {/* Hero Section */}
-      <section className='bg-primary text-white py-20'>
+      <section className='bg-primary unique-bg text-white py-20'>
         <div className='container mx-auto text-center'>
-          <h1 className='text-4xl mb-4 font-pirate text-secondary'>
+          <h1 className='text-4xl mb-4 font-pirate text-primary'>
             Magic for Hire
           </h1>
           <p className='text-xl mb-6 font-pirate'>
