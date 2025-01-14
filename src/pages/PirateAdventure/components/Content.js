@@ -3,6 +3,7 @@ import hunt from '../../../assets/slider/hunt.jpg'
 import cannon from '../../../assets/slider/cannon.jpg'
 import pirateball from '../../../assets/slider/pirateball.jpg'
 import feast from '../../../assets/feast.jpg'
+import { Link } from 'react-router-dom'
 
 const Content = () => {
   return (
@@ -188,7 +189,7 @@ const Content = () => {
       <div className='my-10 text-white'>
         <p>
           Don’t miss your chance to live the pirate’s life.{' '}
-          <a href='#google' className='font-bold text-secondary' rel='norefferer'>Book Your Pirate Adventure</a> and set sail for a world of
+          <Link to="/contact">Book Your Pirate Adventure </Link> and set sail for a world of
           fun and excitement at Triangles End!
         </p>
       </div>

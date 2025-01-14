@@ -1,4 +1,5 @@
 import Cards from './Cards'
+import { Link } from 'react-router-dom'
 
 const World = () => {
   return (
@@ -32,9 +33,9 @@ const World = () => {
           </p>
 
           <button className='text-primary bg-secondary mt-5 text-xs md:text-lg py-2 px-6 font-semibold rounded shadow-md hover:from-yellow-300 font-pirate hover:to-secondary hover:scale-105 transform transition-all duration-300 ease-in-out'>
-            <a href='#race' rel='noreferrer'>
+            <Link to='/contact'>
               Come join the crew at the Camp—your adventure awaits!
-            </a>
+            </Link>
           </button>
         </div>
         <Cards />

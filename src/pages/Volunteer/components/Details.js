@@ -1,4 +1,5 @@
 import '../Vol.css'
+import { Link } from 'react-router-dom'
 import { FaHammer, FaBook, FaHandsHelping, FaStar } from 'react-icons/fa'
 const Details = () => {
   return (
@@ -151,9 +152,7 @@ const Details = () => {
             </p>
             <div className='text-center my-2'>
               <button className='bg-primary text-secondary py-2 px-6 font-semibold rounded shadow-md hover:from-yellow-300 font-pirate hover:to-secondary hover:scale-105 transform transition-all duration-300 ease-in-out'>
-                <a href='#race' rel='noreferrer'>
-                  Contact Now
-                </a>
+                <Link to='/contact'>Contact Now</Link>
               </button>
             </div>
           </section>

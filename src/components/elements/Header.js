@@ -142,7 +142,7 @@ const Header = () => {
               )}
             </div>
             <NavLink
-              to='/movies/popular'
+              to='/spirit-forge'
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
@@ -151,7 +151,7 @@ const Header = () => {
               Magic for Hire
             </NavLink>
             <NavLink
-              to='/movies/top'
+              to='/volunteer'
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
@@ -160,7 +160,7 @@ const Header = () => {
               Volunteer at TE
             </NavLink>
             <NavLink
-              to='/movies/upcoming'
+              to='/contact'
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }

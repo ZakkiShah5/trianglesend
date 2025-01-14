@@ -1,6 +1,6 @@
 import cover from '../../../assets/cover.avif'
-// import ship from '../../../assets/slider/entrance.webp'
-// import guest from '../../../assets/slider/guests.jpg'
+import ship from '../../../assets/slider/entrance.webp'
+import guest from '../../../assets/slider/guests.jpg'
 import badge from '../../../assets/badge.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -20,12 +20,12 @@ const Hero = () => {
       date: 'September 14-15 Rain or Shine!'
     },
     {
-      // image: ship,
+      image: ship,
       title: 'Exciting Adventures Await!',
       date: 'Join the Crew Today!'
     },
     {
-      // image: guest,
+      image: guest,
       title: 'Exciting Adventures Await!',
       date: 'Join the Crew Today!'
     }

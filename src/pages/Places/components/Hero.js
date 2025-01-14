@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Hero = () => {
   return (
     <section className='max-w-screen-xl mx-auto bg-secondary text-white p-10 more'>
@@ -17,9 +19,7 @@ const Hero = () => {
         </p>
 
         <button className='bg-primary text-secondary mt-5 py-2 px-6 font-semibold rounded shadow-md hover:from-yellow-300 font-pirate hover:to-secondary hover:scale-105 transform transition-all duration-300 ease-in-out'>
-          <a href='#race' rel='noreferrer'>
-            Set Sail With Us
-          </a>
+          <Link to='/contact'>Set Sail With Us</Link>
         </button>
       </div>
     </section>

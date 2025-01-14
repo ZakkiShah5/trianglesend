@@ -3,6 +3,7 @@ import pirate from '../../assets/slider/pirate.jpg'
 import hunt from '../../assets/slider/hunt.jpg'
 import feast from '../../assets/feast.jpg'
 import circle from '../../assets/circle.png'
+import { Link } from 'react-router-dom'
 
 const Custom = () => {
   return (
@@ -112,9 +113,7 @@ const Custom = () => {
         <p>Step aboard. Your adventure begins with your imagination. </p>
         <div className='text-center my-2'>
           <button className='bg-secondary text-primary py-2 px-6 font-semibold rounded shadow-md hover:from-yellow-300 font-pirate hover:to-secondary hover:scale-105 transform transition-all duration-300 ease-in-out'>
-            <a href='#race' rel='noreferrer'>
-              Start Planning Your Event
-            </a>
+            <Link to='/contact'>Start Planning Your Event</Link>
           </button>
         </div>
       </section>
