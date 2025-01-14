@@ -22,10 +22,10 @@ const Footer = () => {
         <div>
           <h1 className='text-xl'>Links</h1>
           <div className='flex flex-col text-white'>
-            <Link to='/'>World of te</Link>
-            <Link to='/'>Magic for hire</Link>
-            <Link to='/'>Volunteer at te</Link>
-            <Link to='/'>Contact us</Link>
+            <Link to='/pirates-adventure'>World of te</Link>
+            <Link to='/spirit-forge'>Magic for hire</Link>
+            <Link to='/volunteer'>Volunteer at te</Link>
+            <Link to='/contact'>Contact us</Link>
           </div>
         </div>
         <div>
