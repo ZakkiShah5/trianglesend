@@ -5,21 +5,19 @@ const MagicForHire = () => {
   return (
     <div className='font-sans'>
       {/* Hero Section */}
-      <section className='adv-page relative'>
-      <div className='p-2 w-80 md:w-9/12 md:max-w-screen-xl mx-auto bg-black/30 backdrop-blur-md absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 adv-glass'>
-        <h1 className='text-center font-bold text-secondary font-pirate text-lg md:text-2xl '>
-        Magic for Hire
-        </h1>
-        <p className='text-center text-white text-xs md:text-lg font-pirate'>
-        Bring Your Stories to Life with Spirit Forge
-        </p>
-       
-      </div>
-    </section>
-      
+      <section className='spirit-page relative'>
+        <div className='p-2 w-80 md:w-9/12 md:max-w-screen-xl mx-auto bg-black/30 backdrop-blur-md absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 adv-glass'>
+          <h1 className='text-center font-bold text-secondary font-pirate text-lg md:text-2xl '>
+            Magic for Hire
+          </h1>
+          <p className='text-center text-white text-xs md:text-lg font-pirate'>
+            Bring Your Stories to Life with Spirit Forge
+          </p>
+        </div>
+      </section>
 
       {/* Introduction Section */}
-      <section id='about' className='py-20 bg-gray-100 max-w-screen-xl'>
+      <section id='about' className='py-20 bg-media max-w-screen-xl '>
         <div className='mx-auto md:flex p-5 gap-10'>
           <img
             src={spirit}
@@ -96,7 +94,9 @@ const MagicForHire = () => {
       {/* Why Choose Us Section */}
       <section className='bg-primary text-white py-20'>
         <div className='container mx-auto text-center'>
-          <h2 className='text-4xl font-pirate text-secondary font-bold mb-10'>Why Choose Spirit Forge?</h2>
+          <h2 className='text-4xl font-pirate text-secondary font-bold mb-10'>
+            Why Choose Spirit Forge?
+          </h2>
           <div className='grid md:grid-cols-2 gap-10'>
             <div className='p-6'>
               <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>
@@ -105,21 +105,87 @@ const MagicForHire = () => {
               <p>Captivate your audience with dynamic, personalized stories.</p>
             </div>
             <div className='p-6'>
-              <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>Boost Engagement</h3>
+              <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>
+                Boost Engagement
+              </h3>
               <p>Form memorable connections with responsive characters.</p>
             </div>
             <div className='p-6'>
-              <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>Simplify Creation</h3>
+              <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>
+                Simplify Creation
+              </h3>
               <p>
                 Leverage AI and cloud services to reduce content complexity.
               </p>
             </div>
             <div className='p-6'>
-              <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>Ensure Excellence</h3>
+              <h3 className='text-xl font-pirate text-secondary font-bold mb-2'>
+                Ensure Excellence
+              </h3>
               <p>
                 Prioritize quality and consistency with responsible AI
                 principles.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How works */}
+
+      <section className='py-16 bg-media'>
+        <div className='container mx-auto px-6 text-center'>
+          <h2 className='text-4xl font-pirate text-secondary font-bold'>
+            How It Works
+          </h2>
+          <p className='text-lg italic text-white mb-12'>
+            Spirit Forge is designed for simplicity and flexibility, making it
+            easy to integrate into your space or event:
+          </p>
+
+          <div className='space-y-10'>
+            <div className='flex gap-5'>
+              <div className='flex-1 items-center bg-primary shadow-lg p-6 transition-all hover:shadow-xl'>
+                <h3 className='text-2xl font-semibold font-pirate text-secondary mb-4'>
+                  Cloud-Based Platform
+                </h3>
+                <p className='text-white text-lg italic text-center'>
+                  Seamlessly connect Spirit Forge with standard hardware and
+                  software systems.
+                </p>
+              </div>
+
+              <div className='flex-1 items-center bg-primary shadow-lg p-6 transition-all hover:shadow-xl'>
+                <h3 className='font-pirate text-2xl font-semibold text-secondary mb-4'>
+                  Advanced AI Models
+                </h3>
+                <p className='italic text-white text-lg text-center'>
+                  Leverage state-of-the-art speech, vision, and language
+                  technologies to deliver natural, responsive experiences.
+                </p>
+              </div>
+            </div>
+
+            <div className='flex gap-5'>
+              <div className='flex-1 items-center bg-primary shadow-lg p-6 transition-all hover:shadow-xl'>
+                <h3 className='font-pirate text-2xl font-semibold text-secondary mb-4'>
+                  Coordinated Magic
+                </h3>
+                <p className='italic text-white text-lg text-center'>
+                  Control lighting, robotics, and other effects using common
+                  protocols like DMX and HTTP.
+                </p>
+              </div>
+
+              <div className='flex-1 items-center bg-primary shadow-lg p-6 transition-all hover:shadow-xl'>
+                <h3 className='font-pirate text-2xl font-semibold text-secondary mb-4'>
+                  Always Evolving
+                </h3>
+                <p className='italic text-white text-lg text-center'>
+                  Spirit Forge is licensed as a service, ensuring it stays
+                  up-to-date with new features and capabilities.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -135,9 +201,7 @@ const MagicForHire = () => {
             Let the magic of Spirit Forge transform your storytelling.
           </p>
           <button className='bg-white text-primary py-2 px-6 font-semibold rounded shadow-md hover:from-yellow-300 font-pirate hover:to-secondary hover:scale-105 transform transition-all duration-300 ease-in-out'>
-            <Link to='/contact'>
-            Contact Us Today
-            </Link>
+            <Link to='/contact'>Contact Us Today</Link>
           </button>
         </div>
       </section>

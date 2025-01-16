@@ -16,18 +16,18 @@ const Hero = () => {
   const slides = [
     {
       image: cover,
-      title: '2024 Pirate Festival at Triangles End',
-      date: 'September 14-15 Rain or Shine!'
+      title: '2025 Pirate Festival at Triangles End',
+      date: 'Oct 11 2025!'
     },
     {
       image: ship,
-      title: 'Exciting Adventures Await!',
-      date: 'Join the Crew Today!'
+      title: '2025 Pirate Festival at Triangles End',
+      date: 'Oct 11 2025!'
     },
     {
       image: guest,
-      title: 'Exciting Adventures Await!',
-      date: 'Join the Crew Today!'
+      title: '2025 Pirate Festival at Triangles End',
+      date: 'Oct 11 2025!'
     }
   ]
   return (

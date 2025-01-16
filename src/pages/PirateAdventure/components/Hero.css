@@ -12,3 +12,11 @@
     border-image-repeat: repeat;
     border-image-width: 10px;
 }
+.spirit-page{
+    background-image: url('../../../assets/spiritcover.webp');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

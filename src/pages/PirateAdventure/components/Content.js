@@ -1,14 +1,19 @@
 import circle from '../../../assets/circle.png'
 import hunt from '../../../assets/slider/hunt.jpg'
 import cannon from '../../../assets/slider/cannon.jpg'
-import pirateball from '../../../assets/slider/pirateball.jpg'
-import feast from '../../../assets/feast.jpg'
+import pirateball from '../../../assets/DodgeBall.avif'
+import feast from '../../../assets/fest.avif'
+import trasure from '../../../assets/treasure.png'
+import cannonbomb from '../../../assets/cannon-bomb.png'
+import bowl from '../../../assets/bowling.png'
+import fester from '../../../assets/feaster.png'
+import ribbon from '../../../assets/ribbon.png'
 import { Link } from 'react-router-dom'
 
 const Content = () => {
   return (
     <div className='p-5 my-5 max-w-screen-lg  mx-auto'>
-      <div className='flex flex-col items-center md:h-[55vh] md:flex-row gap-5'>
+      <div className='flex flex-col mb-10 relative items-center md:h-[55vh] md:flex-row gap-5'>
         <div className='text-white w-full md:w-4/6 z-20'>
           <h1 className='text-2xl font-pirate text-secondary'>Treasure Hunt</h1>
           <p>Set sail on an epic quest with your crew!</p>
@@ -47,19 +52,23 @@ const Content = () => {
         </div>
 
         <img
-          className='w-full md:w-5/12 md:absolute md:right-[-100px] z-10'
+          className='w-full md:w-5/12'
           src={hunt}
           alt=''
         />
+
+        <img className='absolute w-28 md:w-40 bottom-[-40px] md:bottom-[-60px] -rotate-12 right-[0] md:right-[-50px] z-10'  src={trasure} alt="" />
       </div>
 
-      <div className='flex flex-col-reverse items-center my-3 md:h-[55vh] md:flex-row gap-5'>
+      <img className='w-56 mx-auto' src={ribbon} alt="" />
+
+      <div className='flex relative mb-10 flex-col mb-6-reverse items-center my-3 md:h-[55vh] md:flex-row gap-5'>
         <img
-          className='w-full md:w-5/12 md:absolute md:left-[-100px] z-10'
+          className='w-full md:w-5/12  z-10'
           src={cannon}
           alt=''
         />
-        <div className='text-white w-full md:flex-1 md:ml-96'>
+        <div className='text-white w-full md:flex-1 '>
           <h1 className='text-2xl font-pirate text-secondary'>Cannon Range</h1>
           <p>Fire away, matey! Test your aim on our Gunnery Range.</p>
           <ul className='my-2'>
@@ -94,9 +103,12 @@ const Content = () => {
             at Arms, ye’ll stay safe while blasting your way to glory!
           </p>
         </div>
-      </div>
+        <img className='absolute w-28 md:w-52 top-[180px] md:bottom-[-60px] -rotate-12 left-0  md:left-[-50px] z-10'  src={cannonbomb} alt="" />
 
-      <div className='flex flex-col items-center md:h-[55vh] md:flex-row gap-5'>
+      </div>
+      <img className='w-56 mx-auto' src={ribbon} alt="" />
+
+      <div className='flex relative flex-col mb-10 items-center md:h-[55vh] md:flex-row gap-5'>
         <div className='text-white w-full md:w-4/6 z-20'>
           <h1 className='text-2xl font-pirate text-secondary'>Pirate Ball</h1>
           <p>Experience the ultimate pirate showdown!</p>
@@ -137,19 +149,22 @@ const Content = () => {
           </p>
         </div>
         <img
-          className='w-full md:w-5/12 md:absolute md:right-[-100px] z-10'
+          className='w-full h-72 md:w-5/12  z-10'
           src={pirateball}
           alt=''
         />
+         <img className='absolute w-28 md:w-40 bottom-[-20px] md:bottom-[-60px] -rotate-12 right-0 md:right-[-50px] z-10'  src={bowl} alt="" />
       </div>
 
-      <div className='flex flex-col-reverse items-center my-3 md:h-[55vh] md:flex-row gap-5'>
+      <img className='w-56 mx-auto' src={ribbon} alt="" />
+
+      <div className='flex flex-col relative mb-10 items-center my-3 md:h-[55vh] md:flex-row gap-5'>
         <img
-          className='w-full md:w-5/12 md:absolute md:left-[-100px] z-10'
+          className='w-full h-72 object-cover md:w-5/12'
           src={feast}
           alt='feast'
         />
-        <div className='text-white w-full md:flex-1 md:ml-96'>
+        <div className='text-white w-full md:flex-1 '>
           <h1 className='text-2xl font-pirate text-secondary'>The Feast</h1>
           <p>Celebrate your triumphs at a feast fit for a king!</p>
           <ul className='my-2'>
@@ -184,7 +199,10 @@ const Content = () => {
           </ul>
           <p>Ready to Embark on Your Adventure?</p>
         </div>
+        <img className='absolute w-12 md:w-16 bottom-[-30px] -rotate-12 right-0 md:left-[-30px] z-20'  src={fester} alt="" />
       </div>
+
+      <img className='w-56  mx-auto' src={ribbon} alt="" />
 
       <div className='my-10 text-white'>
         <p>

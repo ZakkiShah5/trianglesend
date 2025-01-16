@@ -23,8 +23,8 @@ const Cards = () => {
       goto: '/spirit-forge'
     },
     {
-      name: 'Events',
-      title: 'Host Your Events',
+      name: 'Tickets',
+      title: 'Book your Adventure',
       desc: 'A Canvas for Your Imagination',
       img: goal3,
       goto: '/custom-adventures'
@@ -62,7 +62,7 @@ const Cards = () => {
                 {li.desc}
               </p>
               <button className='bg-primary text-white py-1 px-6 rounded shadow-md font-pirate '>
-              <Link to={li.goto}>Set Sail</Link>
+              <Link to={li.goto}>Set sail</Link>
             </button>
             </div>
           </div>
