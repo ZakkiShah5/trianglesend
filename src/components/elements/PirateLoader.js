@@ -18,7 +18,7 @@ const PirateLoader = ({ pageName }) => {
 
       {/* Loading Text */}
       <div className="text-lg md:text-2xl font-pirate font-semibold text-secondary mt-4">
-        Loading the {pageName}...
+        Sailing to the {pageName}...
       </div>
     </div>
   );

@@ -26,14 +26,14 @@ const Header = () => {
         </Link>
         <nav className='hidden md:flex gap-4 font-medium'>
           <div className='relative group'>
-            <Link
-              to='/pirate-adventure'
+            <NavLink
+              to='/worldofte'
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
             >
               World of TE
-            </Link>
+            </NavLink>
 
             <div className='absolute z-30 text-sm w-72 top-5 hidden group-hover:block bg-secondary text-primary mt-1 p-2 rounded shadow-lg'>
               <div className='flex flex-col'>
@@ -98,55 +98,54 @@ const Header = () => {
           <div className='absolute top-16 left-0 right-0 z-40 bg-primary px-8 py-4 flex flex-col gap-4 border-t'>
             <div className='relative'>
               {/* Dropdown Trigger */}
-              <button
+              <NavLink
                 className='text-secondary hover:text-white font-medium'
-                onClick={toggleDropdown}
+                to='worldofte'
               >
                 World of TE
-              </button>
+              </NavLink>
 
               {/* Dropdown Menu */}
-              {isOpen && (
+              
                 <div className=' text-sm  text-secondary  mt-1 p-2 rounded'>
                   <div className='flex flex-col'>
                     <NavLink
                       to='/pirate-adventure'
                       className='py-1 px-3 border-b border-secondary hover:bg-primary hover:text-white transition'
-                      onClick={closeMenu} // Close menu after selecting
+                       // Close menu after selecting
                     >
                       Pirate Adventure at TE
                     </NavLink>
                     <NavLink
                       to='/custom-adventures'
                       className='py-1 px-3 border-b border-secondary hover:bg-primary hover:text-white transition'
-                      onClick={closeMenu}
+                      
                     >
                       Custom Adventures and Events
                     </NavLink>
                     <NavLink
                       to='/places'
                       className='py-1 px-3 border-b border-secondary hover:bg-primary hover:text-white transition'
-                      onClick={closeMenu}
+                      
                     >
                       Places at TE
                     </NavLink>
                     <NavLink
                       to='/stay'
                       className='py-1 px-3 hover:bg-primary border-b border-secondary hover:text-white transition'
-                      onClick={closeMenu}
+                      
                     >
                       Stay at TE
                     </NavLink>
                   </div>
                 </div>
-              )}
             </div>
             <NavLink
               to='/spirit-forge'
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
-              onClick={closeMenu}
+              
             >
               Magic for Hire
             </NavLink>
@@ -155,7 +154,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
-              onClick={closeMenu}
+              
             >
               Volunteer at TE
             </NavLink>
@@ -164,7 +163,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive ? 'text-white' : 'hover:text-white'
               }
-              onClick={closeMenu}
+              
             >
               Contact Us
             </NavLink>

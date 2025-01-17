@@ -1,5 +1,5 @@
 import { Header, Footer, PirateLoader } from './components';
-import { Custom, Spirit, Home, PirateAdventure, Places, Coming, Volunteer, Contact } from './pages';
+import { Custom, Spirit, Home, PirateAdventure, Places, Coming, Volunteer, Contact, WorldOfTe } from './pages';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -17,6 +17,7 @@ const App = () => {
     '/stay': 'Stay with Us',
     '/volunteer': 'Volunteer',
     '/contact': 'Contact Us',
+    '/worldofte': 'World of Triangles End'
   };
 
   const currentPageName = routeToTitle[location.pathname] || 'Pirate Website';
@@ -51,6 +52,7 @@ const App = () => {
         <Route path="/stay" element={<Coming />} />
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/worldofte" element={<WorldOfTe />} />
       </Routes>
       <Footer />
     </>

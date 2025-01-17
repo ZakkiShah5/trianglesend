@@ -20,3 +20,21 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
+.map-bg{
+    background-image: url('../../../assets/map.jpg');
+    /* background-size: cover; */
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    .spirit-page{
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: local;
+        background-repeat: no-repeat;
+    }
+}

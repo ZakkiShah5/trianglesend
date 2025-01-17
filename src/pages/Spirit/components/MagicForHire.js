@@ -138,13 +138,13 @@ const MagicForHire = () => {
           <h2 className='text-4xl font-pirate text-secondary font-bold'>
             How It Works
           </h2>
-          <p className='text-lg italic text-white mb-12'>
+          <p className='text-lg italic text-primary mb-12'>
             Spirit Forge is designed for simplicity and flexibility, making it
             easy to integrate into your space or event:
           </p>
 
           <div className='space-y-10'>
-            <div className='flex gap-5'>
+            <div className='flex flex-col md:flex-row gap-5'>
               <div className='flex-1 items-center bg-primary shadow-lg p-6 transition-all hover:shadow-xl'>
                 <h3 className='text-2xl font-semibold font-pirate text-secondary mb-4'>
                   Cloud-Based Platform
@@ -166,7 +166,7 @@ const MagicForHire = () => {
               </div>
             </div>
 
-            <div className='flex gap-5'>
+            <div className='flex gap-5 flex-col md:flex-row'>
               <div className='flex-1 items-center bg-primary shadow-lg p-6 transition-all hover:shadow-xl'>
                 <h3 className='font-pirate text-2xl font-semibold text-secondary mb-4'>
                   Coordinated Magic

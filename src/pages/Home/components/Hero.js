@@ -17,17 +17,17 @@ const Hero = () => {
     {
       image: cover,
       title: '2025 Pirate Festival at Triangles End',
-      date: 'Oct 11 2025!'
+      date: 'Oct 11!'
     },
     {
       image: ship,
       title: '2025 Pirate Festival at Triangles End',
-      date: 'Oct 11 2025!'
+      date: 'Oct 11'
     },
     {
       image: guest,
       title: '2025 Pirate Festival at Triangles End',
-      date: 'Oct 11 2025!'
+      date: 'Oct 11'
     }
   ]
   return (
