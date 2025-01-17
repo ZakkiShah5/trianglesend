@@ -6,16 +6,7 @@ import '../../App.css'
 
 const Header = () => {
   const [mobMenu, setMobMenu] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen)
-  }
-
-  const closeMenu = () => {
-    setMobMenu(false)
-    setIsOpen(false)
-  }
   return (
     <header className='md:relative bg-primary font-pirate text-secondary shadow-lg'>
       <div className='p-5 max-w-screen-lg  transition ease-in-out my-0 mx-auto flex items-center justify-between'>
